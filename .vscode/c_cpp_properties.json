@@ -24,6 +24,7 @@
                 "C:/Users/joaof/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/common",
                 "C:/Users/joaof/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lpsci",
                 "C:/Users/joaof/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/port",
+                "C:/Users/joaof/OneDrive/Documentos/PlatformIO/Projects/260324-195231-zephyr-blink/lib/pwm",
                 ""
             ],
             "browse": {
@@ -45,6 +46,7 @@
                     "C:/Users/joaof/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/common",
                     "C:/Users/joaof/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lpsci",
                     "C:/Users/joaof/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/port",
+                    "C:/Users/joaof/OneDrive/Documentos/PlatformIO/Projects/260324-195231-zephyr-blink/lib/pwm",
                     ""
                 ]
             },

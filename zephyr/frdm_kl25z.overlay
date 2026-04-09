@@ -1,0 +1,9 @@
+&gpio1 {
+	status = "okay";
+	label = "gpiob";
+};
+
+&gpio2 {
+	status = "okay";
+	label = "gpioc";
+};
