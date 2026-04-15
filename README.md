@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 How to build PlatformIO based project
 =====================================
 
@@ -25,3 +26,7 @@ $ pio run -e frdm_k64f --target upload
 # Clean build files
 $ pio run --target clean
 ```
+=======
+# zephyr-freedom-infravermelho
+Implementação do sensor infravermelho
+>>>>>>> 2cb5bf4ca063ccdaea8ef28495538f6d9a6f557e
