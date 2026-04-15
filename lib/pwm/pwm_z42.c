@@ -56,7 +56,7 @@ bool pwm_tpm_Ch_Init(TPM_MemMapPtr tpm, uint16_t channel, uint8_t mode,
 		{
 			if((channel<=2)||(channel==5))
 			{
-				if((pin>=3) || (pin<=5))
+				if((pin>=3) && (pin<=5))
 				{
 					// ANTES: SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
 					SIM->SCGC5 |= SIM_SCGC5_PORTA_MASK;
@@ -102,7 +102,7 @@ bool pwm_tpm_Ch_Init(TPM_MemMapPtr tpm, uint16_t channel, uint8_t mode,
 		{
 			if(channel<=4)
 			{
-				if( (pin>=24 || pin<=25) || (pin>=29 || pin<=31) )
+				if( (pin>=24 && pin<=25) || (pin>=29 && pin<=31) )
 				{
 					SIM->SCGC5 |= SIM_SCGC5_PORTE_MASK;
 					PORTE->PCR[pin] = PORT_PCR_MUX(3);
@@ -121,7 +121,7 @@ bool pwm_tpm_Ch_Init(TPM_MemMapPtr tpm, uint16_t channel, uint8_t mode,
 		{
 			if(gpio == GPIOA)
 			{
-				if(pin>=12 || pin<=13)
+				if(pin>=12 && pin<=13)
 				{
 					SIM->SCGC5 |= SIM_SCGC5_PORTA_MASK;
 					PORTA->PCR[pin] = PORT_PCR_MUX(3);
@@ -139,7 +139,7 @@ bool pwm_tpm_Ch_Init(TPM_MemMapPtr tpm, uint16_t channel, uint8_t mode,
 			}
 			else if(gpio == GPIOE)
 			{
-				if(pin>=20 || pin<=21)
+				if(pin>=20 && pin<=21)
 				{
 					SIM->SCGC5 |= SIM_SCGC5_PORTE_MASK;
 					PORTE->PCR[pin] = PORT_PCR_MUX(3);
@@ -156,7 +156,7 @@ bool pwm_tpm_Ch_Init(TPM_MemMapPtr tpm, uint16_t channel, uint8_t mode,
 		{
 			if(gpio == GPIOA)
 			{
-				if(pin>=1 || pin<=2)
+				if(pin>=1 && pin<=2)
 				{
 					SIM->SCGC5 |= SIM_SCGC5_PORTA_MASK;
 					PORTA->PCR[pin] = PORT_PCR_MUX(3);
@@ -165,7 +165,7 @@ bool pwm_tpm_Ch_Init(TPM_MemMapPtr tpm, uint16_t channel, uint8_t mode,
 			}
 			else if(gpio == GPIOB)
 			{
-				if((pin>=2||pin<=3) || (pin>=18||pin<19))
+				if((pin>=2 && pin<=3) || (pin>=18 && pin<=19))
 				{
 					SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK;
 					PORTB->PCR[pin] = PORT_PCR_MUX(3);
@@ -174,7 +174,7 @@ bool pwm_tpm_Ch_Init(TPM_MemMapPtr tpm, uint16_t channel, uint8_t mode,
 			}
 			else if(gpio == GPIOE)
 			{
-				if(pin>=22 || pin<=23)
+				if(pin>=22 && pin<=23)
 				{
 					SIM->SCGC5 |= SIM_SCGC5_PORTE_MASK;
 					PORTE->PCR[pin] = PORT_PCR_MUX(3);

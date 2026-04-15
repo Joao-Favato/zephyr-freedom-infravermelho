@@ -1,9 +1,14 @@
-&gpio1 {
+
+&gpioa {
+	status = "okay";
+	label = "gpioa";
+};
+
+&gpiob {
 	status = "okay";
 	label = "gpiob";
 };
 
-&gpio2 {
+&gpioe {
 	status = "okay";
-	label = "gpioc";
 };
